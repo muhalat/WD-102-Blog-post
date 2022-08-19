@@ -1,6 +1,101 @@
 body{
     margin:0;
 }
+header{
+    background-color: #FFE7E7;
+    height: 512px;
+}
+.header-nav{
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0px 20px 10px 20px;
+    background-color: #FFE7E7;
+    
+}
+nav{
+    
+    display: flex;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+}
+a li{
+    list-style: none;
+}
+.header-nav li{
+    cursor: pointer;
+    color: #1044FF;
+}
+.header-nav button{
+    background-color: #1044FF;
+    cursor: pointer;
+    width: 130px;
+    height:44px;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+}
+.author{
+    margin-top: 192px;
+}
+.author h1{
+    font-size: 72px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1044FF;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+hr{
+    border: 10px solid #1044FF;
+    border-radius: 5px;
+    width: 571px;
+}
+.author p{
+    text-align: center;
+    color: #1044FF;
+    font-size: 20px;
+    letter-spacing: 5px;
+    
+}
+main{display: grid;
+grid-template-columns: 25vw 20vw;
+grid-template-rows: 40vw 25vw;
+grid-template-areas: "section section section aside"
+"button button button blank"
+"footer footer footer footer";
+}
+section{
+    grid-area: section;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+aside{
+    grid-area: aside;
+    background-color: blue;
+}
+section button{
+    grid-area: button;
+}
+footer{
+    grid-area: footer;
+}
+#contact{
+    height: 340px;
+    background-color: lightblue;
+}
+#socials{
+    height: 340px;
+    background-color: greenyellow;
+}
 .copyright{
     background-color: #0C1F3F;
     text-align: center;
@@ -9,7 +104,26 @@ body{
     color: whitesmoke;
     
 }
+.progress p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+}
+.progress .anchor{
+    background-color: #1044FF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-left: 700px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 70px;
+    width: 150px;
+    cursor: pointer;
+}
 /*  Code for responsiveness  */
+/* cursor: pointer */
 /* @media(min-width: 900px){
 
 } */
