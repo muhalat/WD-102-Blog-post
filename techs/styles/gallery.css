@@ -1,0 +1,20 @@
+/* gallery */
+#content{
+    width:940px;
+    padding:30px;
+    margin: auto;
+    background-color: #fff;
+}
+.gallery img{
+    /* margin: 15px; */
+    width:200px;
+    height:200px;
+    border-radius:25px;
+}
+
+.gallery img:hover{
+    filter:grayscale(100%);
+    transform: scale(1.5);
+    transition: 3s;
+    cursor:pointer;
+}

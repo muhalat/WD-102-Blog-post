@@ -1,0 +1,15 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+.author-wrap img{
+    border-radius: 50%;
+}
+span{
+    color: white;
+    /* line-height: 20vh; */
+}
+figure{
+    margin-left: 0;
+}
