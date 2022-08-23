@@ -261,18 +261,22 @@ footer{
         /* background-color: #0C1F3F; */
         /* width: 100%; */
         gap: 1em;
+        width: 600px;
+        /* overflow: hidden; */
     }
     
     .author{
         display: none;
     }
     section{
+        
         grid-area: section;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 1em;
         overflow: hidden;
+        
     }
     aside{
         grid-area: aside;
@@ -283,21 +287,27 @@ footer{
         overflow: hidden;
         
     }
+    #content{
+        width: 600px;
+        overflow: hidden;
+    }
     .gallery{
-        width: 500px;
-       
+        width: 600px;
+       justify-content: center;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
        gap: 1em;
         
     }
+    
     footer{
         grid-area: footer;
        display: flex;
        flex-direction: column;
        justify-content: center;
-       /* width: 90%;
-        margin: auto; */
+       width: 600px;
+     
+        
     }
 }
