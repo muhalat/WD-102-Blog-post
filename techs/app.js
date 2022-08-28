@@ -15,3 +15,4 @@ function windowResizeHandler() {
 }
 window.addEventListener("resize", windowResizeHandler);
 }
+// navbar code outsourced from https://www.webdesignvista.com/create-responsive-navbar-without-bootstrap/
