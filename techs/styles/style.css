@@ -70,7 +70,6 @@ hr{
 main{
     margin-top: 0;
 display: grid;
-width:100%;
 grid-template-columns: 73vw 21vw;
 grid-template-rows: 115vh 85vh;
 grid-template-areas: "section aside"
@@ -79,7 +78,7 @@ justify-content: center;
 gap: 20px;
 /* background-color: #1044FF; */
 }
-section{
+#container{
     grid-area: section;
     display: flex;
     flex-direction: column;
@@ -108,9 +107,6 @@ aside{
 aside .categories{
     border: 1px solid blue;
     border-radius: 9px;
-}
-section button{
-    grid-area: button;
 }
 footer{
     grid-area: footer;
@@ -163,14 +159,13 @@ footer{
            "section"
            "aside"
            "footer";
-           /* background-color: #0C1F3F; */
-           /* width: 100%; */
-           gap: 2em;
+           gap: 1em;
        }
-       section{
+       #container{
            grid-area: section;
            display: flex;
            flex-direction: column;
+           flex-wrap: nowrap;
            justify-content: center;
            gap: 1em;
            overflow: hidden;
@@ -184,12 +179,9 @@ footer{
            overflow: hidden;
            
        }
-       #content{
-        width: 100%;
-    }
     .gallery{
       
-        width: 90%;
+       
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -200,10 +192,8 @@ footer{
     
        footer{
            grid-area: footer;
-
           display: flex;
           flex-direction: column;
-          width: 100%;
            margin: auto;
        }
 }
@@ -221,9 +211,6 @@ footer{
     .author{
         display: none;
     }
-    #content{
-        width: 100%;
-    }
     .gallery{
       
         width: 90%;
@@ -234,14 +221,32 @@ footer{
         gap:1em
         
     }
+    .article-wrapper{
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
+    #container{
+        grid-area: section;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        /* overflow: hidden; */
+        
+    }
    
 }
 @media(max-width:600px){
     body{
-        margin:0;
+        width: 600px;
         /* display:flex;
         flex-direction: column; */
         overflow-x: hidden;
+        margin: auto;
     }
    header{
      height: 80px;   
@@ -249,31 +254,43 @@ footer{
     .header-nav{
         width:600px;
     }
+    .article-wrapper{
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
     main{
         /* margin-top: 300px; */
+        
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 110vh 50vh 90vh;
+        grid-template-columns: 600px;
+        grid-template-rows: 100vh 50vh 80vh;
         grid-template-areas:
         "section"
         "aside"
         "footer";
-        /* background-color: #0C1F3F; */
-        /* width: 100%; */
         gap: 1em;
-        width: 600px;
-        /* overflow: hidden; */
+        justify-content: center;
+        /* align-items: center; */
+        overflow: hidden;
     }
     
     .author{
         display: none;
     }
-    section{
-        
+    article{
+        margin-right: 0%;
+        right: 0%;
+    }
+    #container{
         grid-area: section;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        padding-right: 0%;
+        margin-right: 0%;
         gap: 1em;
         overflow: hidden;
         
@@ -306,7 +323,7 @@ footer{
        display: flex;
        flex-direction: column;
        justify-content: center;
-       width: 600px;
+       
      
         
     }
