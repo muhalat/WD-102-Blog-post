@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <link rel="stylesheet" href="techs/styles/style.css">
-    <link rel="icon" sizes="642x336" href="techs/Images/log2.PNG">
+    <link rel="icon" sizes="642x336" href="techs/Images/log2.PNG"> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Muhalat Blog</title>
 </head>
 <body>
     <!--beginning of header-->
     <header>
-        <nav>
-        <div class="logo">
-            <h4>Muhalat Logo</h4>
-        </div>
-        <ul class="nav-links">
+    <nav class="navbar">
+        <h1>Muhalat Logo</h1>
+        <span id="toggle-nav" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </span>        
+        <ul id="navlist">
             <li>
                 <a href="#">Home</a>
             </li>
@@ -29,11 +32,7 @@
                 <a href="#">Contact</a>
             </li>
         </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+
     </nav>
     </header>
     <!--end of header-->

@@ -1,11 +1,17 @@
-const navSlide =()=>{
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-    burger.addEventListener('click', ()=>{
-        nav.classList.toggle('nav-active');
-        burger.classList.toggle('dapo');
-    })
-
+var nav = document.getElementById('navlist');
+function toggleNav() {       
+    if ( nav.style.display === "" )
+    { 
+        nav.style.display = "block"
+    }
+    else
+    {
+    nav.style.display = "";
 }
-navSlide();
+}
+function windowResizeHandler() {
+    if ( screen.width > 500 ){
+    nav.style.display = "";
+}
+window.addEventListener("resize", windowResizeHandler);
+}
